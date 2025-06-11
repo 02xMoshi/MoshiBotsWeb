@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotStüdyo - Sade ve Güçlü Discord Botları</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">BotStüdyo</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#bots" class="nav-link">Botlar</a></li>
+                    <li class="nav-item"><a href="#packages" class="nav-link">Paketler</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Yorumlar</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Ekibimiz</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">SSS</a></li>
+                </ul>
+            </div>
+            <div class="hamburger"><i class='bx bx-menu'></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ... Hero, Botlar, Paketler vb. bölümler aynı ... -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="hero-brand">Moshi Bot's</h1>
+                <p class="hero-subtitle"><span id="typed-text"></span></p>
+                <a href="#bots" class="btn btn-primary">Botları İncele</a>
+            </div>
+        </section>
+
+        <section id="bots" class="section container">
+            <h2 class="section-title">Botlarımız</h2>
+            <div id="bots-container" class="card-grid"></div>
+        </section>
+
+        <section id="packages" class="section container">
+            <h2 class="section-title">Paketlerimiz</h2>
+            <div id="packages-container" class="card-grid"></div>
+        </section>
+
+        <section id="testimonials" class="section container">
+            <h2 class="section-title">Müşterilerimiz Ne Diyor?</h2>
+            <div id="testimonials-wrapper" class="testimonials-wrapper">
+                <div id="testimonials-track" class="testimonials-track"></div>
+                <button id="prev-testimonial" class="slider-btn prev"><i class='bx bx-chevron-left'></i></button>
+                <button id="next-testimonial" class="slider-btn next"><i class='bx bx-chevron-right'></i></button>
+            </div>
+        </section>
+
+        <section id="team" class="section container">
+            <h2 class="section-title">Ekibimizle Tanışın</h2>
+            <div id="team-container" class="card-grid"></div>
+        </section>
+        
+        <section id="faq" class="section container">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <div id="faq-container" class="faq-list"></div>
+        </section>
+        
+        <section id="contact" class="section container contact-section">
+            <h2 class="section-title">Destek & İletişim</h2>
+            <p>Bir projeniz mi var veya yardıma mı ihtiyacınız var? Bize ulaşın.</p>
+            <div class="contact-info">
+                 <div class="contact-item"><i class='bx bxl-discord-alt'></i><span>Destek Sunucumuz</span><a href="#">discord.gg/davetkodunuz</a></div>
+                 <div class="contact-item"><i class='bx bx-envelope'></i><span>E-Posta Adresimiz</span><a href="mailto:destek@botstudyo.com">destek@botstudyo.com</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 BotStüdyo. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <!-- YENİ: POP-UP (MODAL) YAPISI -->
+    <div id="details-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button id="modal-close-btn" class="modal-close-btn"><i class='bx bx-x'></i></button>
+            <div class="details-grid">
+                <aside class="details-sidebar">
+                    <div class="category-selector">
+                        <button id="show-bots-modal" class="category-btn active">Botlar</button>
+                        <button id="show-packages-modal" class="category-btn">Paketler</button>
+                    </div>
+                    <nav id="item-list-modal" class="item-list"></nav>
+                </aside>
+                <section id="item-content-modal" class="details-content"></section>
+            </div>
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

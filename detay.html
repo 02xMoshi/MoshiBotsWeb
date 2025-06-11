@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detaylar - BotStüdyo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="details-page">
+
+    <div class="details-wrapper container">
+        <header class="details-header">
+            <a href="index.html" class="back-link">
+                <i class='bx bx-chevron-left'></i>
+                <span>Anasayfa</span>
+            </a>
+        </header>
+        
+        <div class="details-grid">
+            <aside class="details-sidebar">
+                <div class="category-selector">
+                    <button id="show-bots" class="category-btn active">Botlar</button>
+                    <button id="show-packages" class="category-btn">Paketler</button>
+                </div>
+                <nav id="item-list" class="item-list"></nav>
+            </aside>
+            <section id="item-content" class="details-content"></section>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="detay-script.js"></script>
+</body>
+</html>
